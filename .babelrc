@@ -1,0 +1,18 @@
+{
+  "presets": [
+    "babel-preset-expo"
+  ],
+  "plugins": [
+    [
+      "module-resolver",
+      {
+        "extensions": [".ts", ".tsx", ".js", "jsx"],
+        "root": ["./src/app"],
+        "alias": {
+          "@/routes": "routes",
+          "@/lib": "lib"
+        }
+      }
+    ]
+  ]
+}
