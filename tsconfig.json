@@ -18,14 +18,15 @@
     "noUnusedParameters": true,
     "noImplicitReturns": true,
     "moduleResolution": "node",
-    "baseUrl": "src",
+    "baseUrl": "./src",
     "paths": {
-      "@/actions*": ["app/actions*"],
-      "@/components*": ["app/components*"],
-      "@/config*": ["app/config*"],
-      "@/lib*": ["app/lib*"],
-      "@/reducers*": ["app/reducers*"],
-      "@/routes*": ["app/routes*"]
+      "@images*": ["app/assets/images*"],
+      "@actions*": ["app/actions*"],
+      "@components*": ["app/components*"],
+      "@config*": ["app/config*"],
+      "@lib*": ["app/lib*"],
+      "@reducers*": ["app/reducers*"],
+      "@routes*": ["app/routes*"]
     },
     "esModuleInterop": true
   },
@@ -36,5 +37,6 @@
     "./src/**/*",
     "./App.ts",
     "./types/**/*"
-  ]
+  ],
+  "compileOnSave": true
 }

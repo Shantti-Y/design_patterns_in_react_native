@@ -1,16 +1,23 @@
 {
-  "presets": [
-    "babel-preset-expo"
+  "presets": ["babel-preset-expo"
   ],
   "plugins": [
     [
       "module-resolver",
       {
-        "extensions": [".ts", ".tsx", ".js", "jsx"],
-        "root": ["./src/app"],
+        "extensions": [
+          "js",
+          "ts",
+          "tsx"
+        ],
         "alias": {
-          "@/routes": "routes",
-          "@/lib": "lib"
+          "$images": "./src/app/assets/images",
+          "@actions": "./src/app/actions",
+          "@components": "./src/app/components",
+          "@config": "./src/app/config",
+          "@lib": "./src/app/lib",
+          "@reducers": "./src/app/reducers",
+          "@routes": "./src/app/routes"
         }
       }
     ]
